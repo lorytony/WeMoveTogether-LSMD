@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="28.0" prefWidth="363.0" styleClass="cell_container" stylesheets="@../../Styles/FriendCell.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+
+      <HBox alignment="CENTER_LEFT" layoutX="52.0" layoutY="-2.0" prefHeight="28.0" prefWidth="416.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-37.0" AnchorPane.topAnchor="0.0">
+
+            <Button fx:id="info_btn" mnemonicParsing="false" prefWidth="59.0" text="Info">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin></Button>
+      <ImageView fx:id="userPhoto_imageView" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+         <HBox.margin>
+            <Insets left="15.0" />
+         </HBox.margin>
+      </ImageView>
+            <Label fx:id="name_lbl" text="Lorenzo Tonelli">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="surname_lbl" text="Livorno">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="age_lbl" text="27">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+      <Button fx:id="delete_btn" alignment="CENTER" mnemonicParsing="false" prefHeight="15.0" prefWidth="65.0" text="Delete">
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+
+      </HBox>
+
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.dii.aide.movetogether.Controllers.User.ActivityCellController">
+   <children>
+      <Label layoutX="30.0" layoutY="34.0" text="Nome Percorso:" />
+      <Label layoutX="127.0" layoutY="34.0" text="Via Francigena, Tappa34" />
+      <Label layoutX="30.0" layoutY="60.0" text="Distanza: " />
+      <Label layoutX="93.0" layoutY="60.0" text="36km" />
+      <Label layoutX="30.0" layoutY="87.0" text="Inserito:" />
+      <Label layoutX="90.0" layoutY="87.0" text="Frate Amaranto64" />
+      <Label layoutX="233.0" layoutY="60.0" text="Praticata in totale" />
+      <Label layoutX="56.0" layoutY="138.0" text="Classifica a tempo" />
+      <Label layoutX="37.0" layoutY="228.0" prefHeight="43.0" prefWidth="181.0" text="La tua performance come runner è migliore del 76% degli utenti" wrapText="true" />
+      <Label layoutX="237.0" layoutY="171.0" text="I veterani del sentiero:" />
+      <Label layoutX="28.0" layoutY="112.0" text="Punteggio" />
+      <Label layoutX="31.0" layoutY="163.0" text="Runners" />
+      <Label layoutX="157.0" layoutY="163.0" text="Bikers" />
+      <Label layoutX="355.0" layoutY="60.0" text="1260 utenti" />
+      <Label layoutX="99.0" layoutY="112.0" text="4.3 stelle" />
+      <Label layoutX="22.0" layoutY="211.0" text="Le tue statistiche" />
+      <Label layoutX="31.0" layoutY="271.0" text="Mai praticata" />
+      <AnchorPane layoutX="89.0" layoutY="324.0" prefHeight="162.0" prefWidth="251.0" />
+      <Label layoutX="79.0" layoutY="299.0" text="Percorso:" />
+      <Label layoutX="233.0" layoutY="95.0" text="Alcuni tuoi amici l'hanno praticato" />
+      <ListView layoutX="237.0" layoutY="116.0" prefHeight="43.0" prefWidth="191.0" />
+      <ListView layoutX="237.0" layoutY="189.0" prefHeight="43.0" prefWidth="191.0" />
+   </children>
+</AnchorPane>

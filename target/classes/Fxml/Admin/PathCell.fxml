@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="28.0" prefWidth="641.0" styleClass="cell_container" stylesheets="@../../Styles/PathCell.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="-2.0" prefHeight="28.0" prefWidth="631.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+        <Button fx:id="infoPath_btn" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="Info path">
+            <font>
+                <Font size="10.0" />
+            </font>
+            <HBox.margin>
+                <Insets right="10.0" />
+            </HBox.margin>
+        </Button>
+        <Label fx:id="namePath_lbl" prefHeight="17.0" prefWidth="127.0" text="Via Francigena,34">
+            <HBox.margin>
+                <Insets left="20.0" right="5.0" />
+            </HBox.margin>
+        </Label>
+      <Label fx:id="location_lbl" prefHeight="17.0" prefWidth="107.0" text="Comune di Siena" />
+      <Label fx:id="distance_lbl" prefHeight="17.0" prefWidth="44.0" text="24km">
+         <HBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="indicativeDuration_lbl" prefHeight="17.0" prefWidth="43.0" text="120m">
+         <HBox.margin>
+            <Insets right="10.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="avgRate_lbl" prefHeight="17.0" prefWidth="39.0" text="4.5/5">
+         <HBox.margin>
+            <Insets right="10.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="discoverName_lbl" prefHeight="17.0" prefWidth="70.0" text="LoryTony" />
+      <Button fx:id="delete_btn" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="Delete">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Button>
+
+    </HBox>
+</AnchorPane>

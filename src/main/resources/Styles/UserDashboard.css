@@ -1,0 +1,15 @@
+.dashboard{
+    -fx-background-color: #EEEEEE;
+}
+
+
+.listview{
+    -fx-background-color: #EEEEEE;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-color: #AAAAAA;
+}
+
+.list-cell{
+    -fx-background-color: #EEEEEE;
+    -fx-padding: 2 0 2 0;
+}

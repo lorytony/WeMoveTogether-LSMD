@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="650.0" styleClass="dashboard" stylesheets="@../../Styles/UserDashboard.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.dii.aide.movetogether.Controllers.User.UserDashboardController">
+
+      <ListView fx:id="lastActivities_listview" layoutX="17.0" layoutY="329.0" prefHeight="163.0" prefWidth="614.0" styleClass="listview" AnchorPane.bottomAnchor="7.666666666666629" AnchorPane.rightAnchor="19.0" />
+      <Label layoutX="225.0" layoutY="306.0" text="Activities of the last 3 months:">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Label>
+      <Label layoutX="88.0" layoutY="113.0" text="General Informations:">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Label>
+      <Text layoutX="61.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name, Surname:" />
+      <Text layoutX="58.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Activities Done:" />
+      <Text layoutX="58.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="kcal Consumed:" wrappingWidth="102.81121826171875" />
+      <Label fx:id="userNickname_lbl" layoutX="33.0" layoutY="33.0" text="Hello , USER">
+         <font>
+            <Font name="Century Gothic Italic" size="19.0" />
+         </font>
+      </Label>
+      <Text layoutX="58.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preferred Activity:" />
+   <Text layoutX="60.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City, Country:" />
+   <Text layoutX="61.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age:" />
+   <ImageView fx:id="imageProfile_imageView" fitHeight="77.0" fitWidth="77.0" layoutX="195.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+   <Label layoutX="125.0" layoutY="193.0" text="Statistics:">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+   <Line endX="28.66668701171875" endY="92.0" layoutX="296.0" layoutY="190.0" startX="28.66668701171875" startY="-143.6666717529297" />
+      <Text layoutX="58.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preferred Path:" />
+   <Label fx:id="activityDone_lbl" layoutX="169.0" layoutY="213.0" prefHeight="17.0" prefWidth="127.0" text="123456" />
+   <Label fx:id="preferredTypeActivity_lbl" layoutX="170.0" layoutY="231.0" prefHeight="17.0" prefWidth="78.0" text="walking" />
+   <Label fx:id="preferredPath_lbl" layoutX="169.0" layoutY="250.0" prefHeight="17.0" prefWidth="137.0" text="Via francigena34" />
+   <Label fx:id="kcalLastMonth_lbl" layoutX="168.0" layoutY="267.0" prefHeight="17.0" prefWidth="144.0" text="123333 kcal/ last month" />
+   <Label fx:id="cityCountry_lbl" layoutX="168.0" layoutY="169.0" prefHeight="17.0" prefWidth="127.0" text="Livorno, Toscana" />
+   <Label fx:id="age_lbl" layoutX="169.0" layoutY="154.0" prefHeight="17.0" prefWidth="127.0" text="46 years old" />
+   <Label fx:id="nameSurname_lbl" layoutX="169.0" layoutY="138.0" prefHeight="17.0" prefWidth="127.0" text="Lorenzo, Tonelli" />
+   <VBox alignment="TOP_CENTER" layoutX="346.0" layoutY="10.0" prefHeight="287.0" prefWidth="289.0">
+      <children>
+            <Label text="Friends">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </Label>
+            <ListView fx:id="suggestedFriends_listview" prefHeight="89.0" prefWidth="289.0" styleClass="listview" />
+            <Label text="Suggested Friends">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </Label>
+            <ListView fx:id="friends_listview" prefHeight="85.0" prefWidth="278.0" styleClass="listview" />
+         <Label text="Suggested Paths">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </Label>
+         <ListView fx:id="suggestedPaths_listview" prefHeight="87.0" prefWidth="289.0" styleClass="listview" />
+      </children>
+   </VBox>
+
+</AnchorPane>

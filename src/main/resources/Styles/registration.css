@@ -1,0 +1,85 @@
+
+.registration_container {
+    -fx-background-color: #EEEEEE;
+}
+
+/* Logo Container Styles */
+.login_logo_container {
+    -fx-background-color: #32a852;
+    -fx-alignment: center;
+}
+
+.login_logo_container Text {
+    -fx-font-size: 2em;
+    -fx-fill: #FFFFFF;
+}
+
+
+
+/* Account Selector ChoiceBox Styles */
+.date-picker {
+    -fx-background-color: #9ef3a9;
+}
+
+.date-picker .cell {
+    -fx-text-fill: #32a852;
+
+}
+
+.date-picker .arrow-button .arrow{
+    -fx-background-color: white;
+}
+
+.date-picker .arrow {
+    -fx-background-color: #32a852;
+}
+
+
+
+/* Registration Form Styles */
+
+
+#choice-prompt-text {
+    -fx-font-weight: 400;
+    -fx-spacing: 15;
+}
+
+.registration_form_container {
+    -fx-spacing: 15;
+    -fx-alignment: top_left;
+}
+
+.registration_form_container Label {
+    -fx-font-size: 1.1em;
+    -fx-font-weight: bold;
+}
+
+.input_field {
+    -fx-background-color: #FFFFFF;
+    -fx-pref-height: 35;
+    -fx-font-size: 1.2em;
+}
+
+.registration_form_container Button {
+    -fx-background-color: #32a852;
+    -fx-text-fill: #FFFFFF;
+    -fx-pref-width: 350;
+    -fx-pref-height: 30;
+    -fx-font-size: 1.2em;
+}
+
+.registration_form_container Button:hover {
+    -fx-cursor: hand;
+}
+
+.error_lbl {
+    -fx-text-fill: #FF0000;
+}
+
+.title-registration{
+    -fx-text-fill: #32a852;
+    -fx-font-size: 2.1em;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+

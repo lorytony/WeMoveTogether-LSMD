@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.PasswordField?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="login_container" stylesheets="@../Styles/login.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.dii.aide.movetogether.Controllers.LoginController">
+
+      <VBox alignment="TOP_CENTER" layoutX="200.0" layoutY="-1.0" prefHeight="400.0" prefWidth="400.0" styleClass="login_form_container" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="40.0">
+
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0">
+
+                  <Label id="choice-prompt-text" text="Choose your account type:" />
+                  <ChoiceBox fx:id="accountSelector_box" prefHeight="15.0" prefWidth="113.0" styleClass="account_selector">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="username_lbl" text="Username" />
+            <TextField fx:id="username_fld" prefHeight="25.0" prefWidth="196.0" styleClass="input_field" />
+            <Label fx:id="password_lbl" text="Password" />
+            <PasswordField fx:id="password_fld" styleClass="input_field" />
+            <Button fx:id="login_btn" mnemonicParsing="false" text="Login" />
+      <HBox alignment="CENTER" prefHeight="31.0" prefWidth="320.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="If you are not registered, click here:">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Text>
+            <Button fx:id="signin_btn" mnemonicParsing="false" text="Sign In" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </HBox>
+            <Label fx:id="error_lbl" styleClass="error_lbl" />
+
+      </VBox>
+      <VBox prefHeight="400.0" prefWidth="200.0" styleClass="login_logo_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <ImageView fitHeight="27.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MoveTogether" />
+      </VBox>
+
+</AnchorPane>

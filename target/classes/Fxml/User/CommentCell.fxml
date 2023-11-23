@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="90.0" prefWidth="244.0" styleClass="cell_container" stylesheets="@../../Styles/CommentCell.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <VBox prefHeight="90.0" prefWidth="244.0">
+      <children>
+         <HBox prefHeight="100.0" prefWidth="200.0" styleClass="author_container">
+            <children>
+               <Label fx:id="name_lbl" prefHeight="15.0" prefWidth="59.0" text="Name" />
+               <Label fx:id="surname_lbl" prefHeight="15.0" prefWidth="73.0" text="Surname" />
+               <Label fx:id="country_lbl" prefHeight="15.0" prefWidth="63.0" text="Country" />
+            </children>
+         </HBox>
+         <HBox prefHeight="15.0" prefWidth="302.0" styleClass="title_container">
+            <children>
+               <Label fx:id="title_lbl" prefHeight="23.0" prefWidth="185.0" text="Title" />
+               <Label fx:id="score_lbl" text="Score" />
+            </children>
+         </HBox>
+          <HBox alignment="CENTER" prefHeight="57.0" prefWidth="244.0" styleClass="textarea_container">
+            <children>
+               <TextArea fx:id="content_textarea" prefHeight="51.0" prefWidth="221.0" />
+            </children>
+      
+          </HBox>
+         <HBox prefHeight="41.0" prefWidth="244.0" styleClass="data_container">
+            <children>
+               <Label text="Commented: " />
+               <Label fx:id="date_lbl" styleClass="date_label" text=" 22-12-1995 12:33:12" />
+            </children>
+         </HBox>
+      </children>
+   </VBox>
+</AnchorPane>

@@ -1,0 +1,29 @@
+.cell_container{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box,#000000,5,0,0,7);
+
+}
+
+.cell_container Label{
+    -fx-text-fill: #000000;
+    -fx-font-weight:700;
+}
+
+.cell_container Button{
+    -fx-background-color: #32a852;
+    -fx-text-fill: #FFFFFF;
+    -fx-pref-width: 40;
+    -fx-pref-height: 25;
+}
+
+#delete_btn {
+    -fx-background-color: #ff0000;
+    -fx-text-fill: #000000;
+    -fx-pref-width: 55;
+    -fx-pref-height: 25;
+}
+
+.cell_container Line{
+    -fx-stroke: #EEEEEE;
+}

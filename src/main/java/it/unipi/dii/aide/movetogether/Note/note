@@ -1,0 +1,16 @@
+
+1) Importante
+Quando si carica un file fxml
+
+findView = new FXMLLoader(getClass().getResource("/Fxml/User/Find.fxml")).load();
+
+bisogna controllare che il controller sia associate a tale file sennò viene lanciata una eccezione di Javafx!!!!
+Se è specificato nel campo fx:id="controller sbagliato" parte la eccezione!!
+
+2) In alcuni fxml non è stato specificato staticamente il controller a cui sono associati, ad esempio
+il file "FriendCell.fxml" è stato deciso di togliere il controller
+    fx:controller="it.unipi.dii.aide.movetogether.Controllers.User.FriendCellController">
+
+
+3) Neo4j, le versioni pià attuali di neo4j driver,dalla 5.*.* in poi mi davano problemi tipo:
+"Error java: Neo4j.driver not found" invece cone la versione 4.2.0  questo problema non si è verificato.

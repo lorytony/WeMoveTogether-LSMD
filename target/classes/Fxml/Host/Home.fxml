@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.dii.aide.movetogether.Controllers.Host.HomeController">
+   <VBox alignment="TOP_CENTER" prefHeight="500.0" prefWidth="650.0">
+      <children>
+         <StackPane prefHeight="121.0" prefWidth="451.0">
+            <children>
+               <ImageView fx:id="home_imageview" fitHeight="100.0" fitWidth="550.0" pickOnBounds="true" preserveRatio="true">
+
+         
+               </ImageView>
+                <Label fx:id="helloUser_lbl" text="Welcome &lt;Name&gt;, thank to be part of our growing community" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                  <StackPane.margin>
+                     <Insets bottom="40.0" />
+                  </StackPane.margin>
+                </Label>
+                <Text fx:id="firstSentence_fld" strokeType="OUTSIDE" strokeWidth="0.0" text="More than 8456 users are enrolled and many other will add with us" textAlignment="CENTER">
+                  <StackPane.margin>
+                     <Insets bottom="10.0" top="10.0" />
+                  </StackPane.margin>
+                  <font>
+                     <Font name="System Bold Italic" size="12.0" />
+                  </font>
+               </Text>
+               <Text fx:id="secondSentence_fld" strokeType="OUTSIDE" strokeWidth="0.0" text="More than 23493 paths have been regitered to be praticated" textAlignment="CENTER">
+                  <StackPane.margin>
+                     <Insets top="30.0" />
+                  </StackPane.margin>
+                  <font>
+                     <Font name="System Bold Italic" size="12.0" />
+                  </font>
+               </Text>
+            </children>
+         </StackPane>
+          <Label text="Trend Paths">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="19.0" />
+            </font></Label>
+          <ListView fx:id="trendPaths_listview" prefHeight="85.0" prefWidth="248.0">
+            <VBox.margin>
+               <Insets bottom="10.0" left="30.0" right="30.0" />
+            </VBox.margin>
+         </ListView>
+          <Label text="Most Appreciated Paths">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="19.0" />
+            </font></Label>
+          <ListView fx:id="appreciatedPaths_listview" prefHeight="93.0" prefWidth="248.0">
+            <VBox.margin>
+               <Insets bottom="10.0" left="30.0" right="30.0" />
+            </VBox.margin>
+         </ListView>
+         <Label text="Most Appreciated Path Discovers">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="19.0" />
+            </font></Label>
+      
+                <ListView fx:id="appreciatedDiscovers_listview" prefHeight="97.0" prefWidth="347.0">
+            <VBox.margin>
+               <Insets left="100.0" right="100.0" />
+            </VBox.margin>
+         </ListView>
+      </children>
+   </VBox>
+
+</AnchorPane>

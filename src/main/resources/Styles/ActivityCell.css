@@ -1,0 +1,43 @@
+.cell_container{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box,#000000,5,0,0,7);
+
+}
+
+.cell_container Label{
+    -fx-text-fill: #000000;
+    -fx-font-weight:700;
+}
+
+.cell_container Line{
+    -fx-stroke: #EEEEEE;
+}
+
+.cell_container Button{
+    -fx-background-color: #32a852;
+    -fx-text-fill: #FFFFFF;
+    -fx-pref-width: 60;
+    -fx-pref-height: 25;
+    /*-fx-font-size: 1.2em;*/
+}
+
+.modify_button {
+    -fx-background-color: #AAFF00;
+    -fx-text-fill: #000000;
+    -fx-pref-width: 60;
+    -fx-pref-height: 25;
+}
+
+.delete_button {
+    -fx-background-color: #FF0000;
+    -fx-text-fill: #FFFFFF;
+    -fx-pref-width: 60;
+    -fx-pref-height: 25;
+}
+
+
+.date_label{
+    -fx-text-fill: #AAAAAA;
+    -fx-font-weight: 700;
+}

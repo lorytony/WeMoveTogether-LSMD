@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.dii.aide.movetogether.Controllers.User.PathController">
+   <children>
+      <Label fx:id="namePath_lbl" alignment="CENTER" layoutX="197.0" layoutY="9.0" prefHeight="17.0" prefWidth="277.0" text="Via Francigena, Tappa34">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="31.0" layoutY="79.0" text="Distance:" />
+      <Label fx:id="distance_lbl" layoutX="180.0" layoutY="79.0" text="36km" />
+      <Label layoutX="31.0" layoutY="136.0" text="Discover:" />
+      <Label fx:id="nameDiscover_lbl" layoutX="122.0" layoutY="136.0" text="Frate Amaranto64" />
+      <Label fx:id="performance_lbl" layoutX="41.0" layoutY="183.0" prefHeight="43.0" prefWidth="245.0" text="La tua performance come runner è migliore del 76% degli utenti" wrapText="true" />
+      <Label layoutX="442.0" layoutY="158.0" text="The veterans " />
+      <Label layoutX="31.0" layoutY="115.0" text="Rating:" />
+      <Label fx:id="avgScore_lbl" layoutX="182.0" layoutY="115.0" text="4.3/5" />
+      <Label layoutX="28.0" layoutY="166.0" text="Your stats:" />
+      <Label layoutX="30.0" layoutY="250.0" text="Map Path:" />
+      <Label layoutX="381.0" layoutY="79.0" text="Friends who have practiced this path" />
+      <ListView fx:id="friends_listview" layoutX="332.0" layoutY="101.0" prefHeight="43.0" prefWidth="293.0" />
+      <ListView fx:id="seniors_listview" layoutX="332.0" layoutY="177.0" prefHeight="49.0" prefWidth="293.0" />
+      <ListView fx:id="comments_listview" layoutX="328.0" layoutY="260.0" prefHeight="192.0" prefWidth="293.0" />
+      <Label layoutX="421.0" layoutY="243.0" text="Last Mover comments" />
+      <Button fx:id="comment_btn" layoutX="444.0" layoutY="462.0" mnemonicParsing="false" text="Comment" />
+      <ImageView fx:id="path_imageview" fitHeight="170.0" fitWidth="261.0" layoutX="25.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="message_lbl" layoutX="261.0" layoutY="457.0" />
+      <Line endX="-100.00000762939453" endY="43.666664123535156" layoutX="121.0" layoutY="117.0" startX="154.33334350585938" startY="43.66667175292969" />
+      <Label layoutX="31.0" layoutY="96.0" text="Altitude Variation:" />
+      <Label fx:id="altitudeVariation_lbl" layoutX="181.0" layoutY="96.0" text="345m" />
+      <Line endX="-100.00000762939453" endY="43.666664123535156" layoutX="128.0" layoutY="193.0" startX="154.33334350585938" startY="43.66667175292969" />
+      <Line endX="-100.00000762939453" endY="43.666664123535156" layoutX="119.0" layoutY="32.0" startX="503.3333740234375" startY="43.666664123535156" />
+      <Label fx:id="description_lbl" layoutX="62.0" layoutY="31.0" prefHeight="43.0" prefWidth="540.0" text="Grazie al contributo di volontari da tutto il mondo, Wikipedia è disponibile in oltre 320 lingue. Chiunque può contribuire alle voci esistenti o crearne di nuove, affrontando sia gli argomenti tipici delle enciclopedie tradizionali sia quelli presenti in almanacchi, dizionari geografici e pubblicazioni specialistiche" wrapText="true">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

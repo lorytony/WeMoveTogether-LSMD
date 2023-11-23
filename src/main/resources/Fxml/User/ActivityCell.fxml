@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="40.0" prefWidth="934.0" styleClass="cell_container" stylesheets="@../../Styles/ActivityCell.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="date_lbl" layoutX="14.0" layoutY="11.0" styleClass="date_label" text="23-06-2023 14:45" />
+        <Label fx:id="nameActivity_lbl" layoutX="134.0" layoutY="11.0" prefHeight="17.0" prefWidth="128.0" text="Allunghi 3x100" textOverrun="CLIP">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </Label>
+        <Label fx:id="namePath_lbl" layoutX="264.0" layoutY="11.0" prefHeight="17.0" prefWidth="110.0" text="Via Francigena,34" />
+      <Button fx:id="infoPath_btn" layoutX="381.0" layoutY="7.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="57.0" styleClass="info_button" text="Info path">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Label fx:id="typeActivity_lbl" layoutX="459.0" layoutY="11.0" prefHeight="17.0" prefWidth="69.0" text="Runniiiing" />
+        <Label fx:id="distance_lbl" layoutX="537.0" layoutY="11.0" prefHeight="17.0" prefWidth="49.0" text="454 km" />
+      <Label fx:id="timeElapsed_lbl" layoutX="586.0" layoutY="11.0" prefHeight="17.0" prefWidth="49.0" text="713 min" />
+      <Label fx:id="kcal_lbl" layoutX="644.0" layoutY="11.0" prefHeight="17.0" prefWidth="57.0" text="2086 kcal" />
+      <Line endX="100.0" layoutX="25.0" layoutY="32.0" startX="100.00001525878906" startY="-26.333343505859375" />
+      <Label fx:id="avgBpm_lbl" layoutX="710.0" layoutY="11.0" prefHeight="17.0" prefWidth="57.0" text="210 bpm" />
+      <Button fx:id="modifyActivity_btn" layoutX="777.0" layoutY="6.0" mnemonicParsing="false" prefWidth="57.0" styleClass="modify_button" text="Modify" />
+      <Button fx:id="deleteActivity_btn" layoutX="847.0" layoutY="6.0" mnemonicParsing="false" styleClass="delete_button" text="Delete" />
+   </children>
+</AnchorPane>
